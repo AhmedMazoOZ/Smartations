@@ -1,0 +1,9 @@
+body
+{
+    direction: rtl !important;
+    
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+direction: ltr;
+}

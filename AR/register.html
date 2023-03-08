@@ -10,15 +10,20 @@
     <meta name="description" content="meta description">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!-- fonts -->
-    <link rel="stylesheet" href="assets/fonts/SFProARDisplay/stylesheet.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
     <!-- all css -->
     <link rel="stylesheet" href="assets/css/vendor.css">
+     <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    
+  <link rel="stylesheet" href="assets/css/ar.css">
 </head>
 <body>
     <div class="body-wrapper">
-    <!-- announcement bar start -->
+  <!-- announcement bar start -->
         <div class="announcement-bar bg-1 py-1 py-lg-2">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
@@ -53,7 +58,7 @@
                                     </svg>
                                 </span>
                                 <div class="currency-wrapper">
-                                    <a class="currency-btn btn-reset text-white" href="../en/register.html">
+                                    <a class="currency-btn btn-reset text-white" href="../en/login.html">
                                         
                                         <span>EN</span>
                                      
@@ -78,7 +83,7 @@
                     <div class="row align-items-center header">
                         <div class="col-lg-3 col-md-4 col-4">
                             <div class="header-logo">
-                                <a href="index-shoe.html" class="logo-main">
+                                <a href="index.html" class="logo-main">
                                     <img src="assets/img/logo.png" loading="lazy" alt="">
                                 </a>
                             </div>
@@ -98,14 +103,40 @@
                                   
                                     <li class="menu-list-item nav-item has-dropdown">
                                         <div class="mega-menu-header">
-                                            <a class="nav-link" href="blog.html">تصفح الأثاث</a>
+                                            <a class="nav-link" href="blog.html"> الأقسام </a>
                                         
                                         </div>
                                      
                                     </li>
                                  
                                     <li class="menu-list-item nav-item">
-                                        <a class="nav-link" href="contact.html">من نحن </a>
+                                        <a class="nav-link" href="contact.html">شركائنا   </a>
+                                    </li>
+                                     <li class="menu-list-item nav-item has-dropdown">
+                                        <div class="mega-menu-header">
+                                            <a class="nav-link" href="#">انضم إلينا</a>
+                                            <span class="open-submenu">
+                                                <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <div class="submenu-transform submenu-transform-desktop">
+                                            <ul class="submenu list-unstyled">
+                                                <li class="menu-list-item nav-item-sub">
+                                                    <a class="nav-link-sub nav-text-sub" href="register.html">تسجيل جديد</a>
+                                                </li>
+                                                <li class="menu-list-item nav-item-sub">
+                                                    <a class="nav-link-sub nav-text-sub" href="register.html">تسجيل صاحب معرض </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                     <li class="menu-list-item nav-item">
+                                        <a class="nav-link" href="contact.html">اتصل بنا    </a>
                                     </li>
                                 </ul>
                             </nav>
@@ -206,7 +237,7 @@
                 <div class="container">
                     <form action="#" class="login-form common-form mx-auto">
                         <div class="section-header mb-3">
-                            <h2 class="section-heading text-center">تسجيل جديد</h2>
+                            <h2 class="section-heading-login text-center">تسجيل جديد</h2>
                         </div>
                         <div class="row">
                             <div class="col-12">
@@ -276,11 +307,11 @@
                              <div class="col-xl-4 col-lg-5 col-md-6 col-12 footer-widget">
                                 <div class="footer-widget-inner">
                                     <h4 class="footer-logo">
-                                        <a href="/"><img src="assets/img/logo.png" alt="bisum"></a>
+                                        <a href="/"><img src="assets/img/logo-white.png" alt="bisum"></a>
                                     </h4>
                                     <div class="footer-newsletter">
-                                        <p class="footer-text mb-3">
-platform that helps furnish houses for customers by choosing the right tools, colors, </p>
+                                        <p class="footer-text mb-3">سمارتشن هو أكبر متجر إلكتروني حيث يمكنك شراء كل شيء يحص منزلك من الأثاث إلى الأدوات المنزلية وأكثر
+نحن نبني الثقة في تجربة التسوق المنزلي عبر الإنترنت في الربط بين العلامات التجارية المعروفة والمصنعين والعملاء.</p>
                                          
                                         <div class=" icon-f">
                                              <svg width="20" height="20" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -369,7 +400,7 @@ platform that helps furnish houses for customers by choosing the right tools, co
                             <div class="col-xl-2 col-lg-2 col-md-6 col-12 footer-widget">
                                 <div class="footer-widget-inner">
                                     <h4 class="footer-heading d-flex align-items-center justify-content-between">
-                                        <span>About</span>
+                                        <span>عن الشركة</span>
                                         <span class="d-md-none">
                                             <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
                                                 width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff"
@@ -379,7 +410,7 @@ platform that helps furnish houses for customers by choosing the right tools, co
                                         </span>
                                     </h4>
                                     <ul class="footer-menu list-unstyled mb-0 d-md-block">
-                                        <li class="footer-menu-item"><a href="about-us.html">About us</a></li>
+                                        <li class="footer-menu-item"><a href="about-us.html">من نحن </a></li>
                                         <li class="footer-menu-item"><a href="blog.html">سياسة الخصوصية </a></li>
                                        
                                         <li class="footer-menu-item"><a href="blog.html"> الشروط والأحكام </a></li>
