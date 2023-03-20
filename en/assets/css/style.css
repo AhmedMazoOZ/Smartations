@@ -80,7 +80,13 @@ iframe {
 @media (max-width: 575px) {
   .container-fluid {
     padding-left: var(--bs-gutter-x, 0.75rem);
-    padding-right: var(--bs-gutter-x, 0.75rem); } }
+    padding-right: var(--bs-gutter-x, 0.75rem); } 
+
+.breadcrumb li, .breadcrumb li a
+    {
+        font-size: 13px !important;
+    }
+}
 
 .bg-1 {
   background-color: #00234D; }
@@ -1685,7 +1691,7 @@ img.single-banner-img {
   display: inline-block; }
 
 .article-card-published {
-  margin-top: 15px;
+  margin-top: 10px;
 margin-bottom: 5px;}
 
 .article-card-published a {
@@ -3813,9 +3819,6 @@ margin-top: 40px;}
   .footer-widget {
     margin-top: 0; }
   .footer-widget-inner {
-    -ms-border-top: 1px solid rgba(255, 255, 255, 0.4);
-    -webkit-border-top: 1px solid rgba(255, 255, 255, 0.4);
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
     padding-top: 20px; }
     .footer-style-2 .footer-widget-inner {
       -ms-border-top: 1px solid rgba(0, 35, 77, 0.2);
@@ -4138,6 +4141,8 @@ body
 {
     width: 230px;
     height: 230px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .owner-product
@@ -4300,7 +4305,7 @@ body
     border-radius: 10px;
     width: 100%;
 }
-.responsive img
+.ven-name img
 {
     width: 90px;
     height: 90px;
@@ -4308,7 +4313,7 @@ body
     border-radius: 50%;
 }
 
-.responsive p
+.ven-name p
 {
         font-size: 16px;
     margin-top: 10px; 
@@ -4423,8 +4428,9 @@ body
 }
 .article-card-img-wrapper img
 {
-        width: 350px;
-    height: 290px;
+     width: 80px;
+    height: 80px;
+}
 }
 .pagination .link:hover
 {
@@ -4462,11 +4468,56 @@ body
 {
     padding: 15px;
 
-    
 }
 .modal-header
 {
         border-bottom: 0px solid #dee2e6;
     padding: 13px 22px;
     padding-bottom: 0px
+}
+.mb-40
+{
+    margin-bottom: 40px;
+}
+.v-cards
+{
+    border: 1px solid rgb(230, 230, 230);
+        padding: 12px;
+margin-bottom: 30px;
+}
+.v-cards img
+{
+
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.mb-20
+{
+    margin-bottom: 20px;
+}
+.mb-10
+{
+    margin-bottom: 10px;
+}
+#fixedd
+{
+      position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 55px;
+ background: transparent;
+}
+.offer-img
+{
+   width: 270px;
+    height: 270px;
+    border-radius: 4%;
+        padding-left: 10px;
+    
+}
+
+
+.slider-offers .slick-dots , .regular .slick-dots 
+{
+    display: none !important;
 }

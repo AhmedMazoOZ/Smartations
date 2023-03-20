@@ -7,3 +7,44 @@ body
 .slick-slider .slick-track, .slick-slider .slick-list {
 direction: ltr;
 }
+.breadcrumb
+{
+    border-left: 10px solid #f76b6a;
+    border-right: 0px solid #f76b6a;
+}
+.action-content {
+    margin-right: 24px;
+}
+.checkout-bar li:first-child:after {
+    right: 0;
+}
+.checkout-bar li
+{
+        float: right !important;
+}
+.checkout-bar li:after
+{
+        right: -50% !important;
+}
+.filter-checkbox
+
+{
+        margin-left: 0.5rem!important;
+}
+@media (max-width: 767px){
+.checkout-bar li:before {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-left: 15px !important;
+}
+}
+
+.common-slider .slick-slide
+{
+        padding-right: 2px;
+}
+.product-wishlist, .product-wishlist:hover
+{
+        margin-right: 12px;
+}
