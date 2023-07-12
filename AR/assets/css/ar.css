@@ -26,6 +26,11 @@ direction: ltr;
 {
         right: -50% !important;
 }
+.minicart-item > .product-info {
+    width: calc(100% - 80px);
+    padding-right: 20px;
+    padding-left: 0px !important;
+}
 .filter-checkbox
 
 {

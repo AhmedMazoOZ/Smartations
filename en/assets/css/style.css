@@ -1,22 +1,5 @@
 @charset "UTF-8";
 
-/*============================================================================
-  Prefix mixin for generating vendor prefixes:
-  Usage:
-    // Input:
-    .element {
-      @include prefix(transform, scale(1), ms webkit spec);
-    }
-
-    // Output:
-    .element {
-      -ms-transform: scale(1);
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-
-  Based on https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/addons/_prefixer.scss
-==============================================================================*/
  :root {
             --primary-color: #00234D;
             --secondary-color: #F76B6A;
@@ -64,7 +47,10 @@
             --section-subheading-font-weight: 400;
         }
         
-
+body
+{
+    font-family: 'Cairo', sans-serif;
+}
 iframe {
   width: 100%; }
 
@@ -1174,8 +1160,8 @@ button,
 .product-card-action-2 {
   position: absolute;
   z-index: 9;
-     left: 14px;
-    bottom: 110px;
+     left: 0px;
+    bottom: 121px;
   width: 100%;
   -ms-display: flex;
   -webkit-display: flex;
@@ -1270,8 +1256,8 @@ button,
 
 .action-card {
   background: #fefefe;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   margin: 0 7px;
   border-radius: 50%;
   display: -webkit-box;
@@ -4081,11 +4067,6 @@ margin-top: 40px;}
 
 
 /* custom */
-body
-{
-
- font-family: 'Cairo', sans-serif !important;
-}
 
 
 .header-action-item {
@@ -4243,6 +4224,7 @@ body
 
 .section-heading
 {
+    font-size: 33px !important;
     margin-bottom: 20x;
       position:relative;
           padding-bottom:5px;
@@ -4340,11 +4322,17 @@ body
 .btn-shop
 {
     padding: 8px 16px;
-    border: 2px solid #00234d;
+    border: 1px solid #00234d;
     color: #00234d;
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 700;
+}
+.btn-shop:hover
+{
+    background: #00234d;
+        color: var(--btn-primary-color);
+    border: 1px solid var(--btn-primary-border-color);
 }
 
 .mt-30
@@ -4462,7 +4450,7 @@ body
 .department-card2 .product-card-action-2
 {
     left: 0px;
-    bottom: 110px;
+    bottom: 121px;
 }
 .model-login
 {
@@ -4520,4 +4508,17 @@ margin-bottom: 30px;
 .slider-offers .slick-dots , .regular .slick-dots 
 {
     display: none !important;
+}
+
+@media (max-width: 768px)
+{
+   .slick-next , .slick-prev {
+   
+    display: none !important;
+} 
+    .slider-offers .slick-dots , .regular .slick-dots 
+{
+    display: block !important;
+}
+    
 }

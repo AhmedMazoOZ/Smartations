@@ -1,22 +1,5 @@
 @charset "UTF-8";
 
-/*============================================================================
-  Prefix mixin for generating vendor prefixes:
-  Usage:
-    // Input:
-    .element {
-      @include prefix(transform, scale(1), ms webkit spec);
-    }
-
-    // Output:
-    .element {
-      -ms-transform: scale(1);
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-
-  Based on https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/addons/_prefixer.scss
-==============================================================================*/
  :root {
             --primary-color: #00234D;
             --secondary-color: #F76B6A;
@@ -64,7 +47,17 @@
             --section-subheading-font-weight: 400;
         }
         
+@font-face {
+    font-family: 'GE SS Two Bold';
+    src: url('./fonts/GE_SS_Two_Bold.otf') format('truetype');
+   
+    font-weight: bold;
+    font-style: normal;
+  }
 
+  body {
+    font-family: 'GE SS Two Bold', sans-serif !important;
+  }
 iframe {
   width: 100%; }
 
@@ -1174,8 +1167,8 @@ button,
 .product-card-action-2 {
   position: absolute;
   z-index: 9;
-     left: 14px;
-    bottom: 110px;
+     right: 0px;
+    bottom: 122px;
   width: 100%;
   -ms-display: flex;
   -webkit-display: flex;
@@ -1270,8 +1263,8 @@ button,
 
 .action-card {
   background: #fefefe;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   margin: 0 7px;
   border-radius: 50%;
   display: -webkit-box;
@@ -3218,7 +3211,7 @@ margin-top: 40px;}
 .footer-heading {
   margin: 0 0 32px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.5;
   color: #FEFEFE; }
   .footer-style-2 .footer-heading {
@@ -3230,7 +3223,7 @@ margin-top: 40px;}
 .footer-menu-item a,
 .footer-text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.5px;
   color: #FEFEFE;
@@ -3386,7 +3379,7 @@ margin-top: 40px;}
   .header-bottom {
     position: relative; }
   .nav-item-sub {
-    padding: 8px 30px; }
+    padding: 8px 20px; }
   .submenu {
     padding: 10px 0; }
   .main-menu {
@@ -3403,7 +3396,7 @@ margin-top: 40px;}
     padding: 12px 20px;
     cursor: pointer; }
   .header-1 .main-menu > .menu-list-item {
-    padding: 28px 20px;
+    padding: 28px 10px;
     cursor: pointer; }
   .main-menu-2 > .menu-list-item {
     padding: 29px 20px; }
@@ -3674,7 +3667,7 @@ margin-top: 40px;}
   .slide-heading {
     font-size: 54px; }
   .section-heading {
-    font-size: 40px; }
+    font-size: 33px; }
   .utilty-icon-wrapper {
     display: inline-block;
     margin-right: 7px; }
@@ -3791,7 +3784,7 @@ margin-top: 40px;}
   .slide-heading {
     font-size: 48px; }
   .section-heading {
-    font-size: 30px; }
+    font-size: 22px; }
   .product-card-title,
   .product-card-title a {
     font-size: 16px; }
@@ -4081,11 +4074,7 @@ margin-top: 40px;}
 
 
 /* custom */
-body
-{
 
- font-family: 'Cairo', sans-serif !important;
-}
 
 
 .header-action-item {
@@ -4181,7 +4170,7 @@ body
 .icon-f
 {
     margin-top: 5px;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .footer-social {
@@ -4205,6 +4194,16 @@ body
 {
     padding: 0.25rem!important;
 }
+.section-heading
+{
+       font-size: 33px !important;
+      position:relative;
+          padding-bottom:5px;
+          display:inline-block;
+          color:#f76b6a;
+    text-transform: capitalize;
+    
+}
 
 @media (max-width: 767px) {
 		.carousel-inner .carousel-item > div {
@@ -4213,6 +4212,10 @@ body
 		.carousel-inner .carousel-item > div:first-child {
 			display: block;
 		}
+    .section-heading
+    {
+        font-size: 22px !important;
+    }
 	}
 
 	.carousel-inner .carousel-item.active,
@@ -4241,16 +4244,7 @@ body
 	}
 
 
-.section-heading
-{
-    margin-bottom: 20x;
-      position:relative;
-          padding-bottom:5px;
-          display:inline-block;
-          color:#f76b6a;
-    text-transform: capitalize;
-    
-}
+
 
 
      .section-heading::after{
@@ -4340,11 +4334,17 @@ body
 .btn-shop
 {
     padding: 8px 16px;
-    border: 2px solid #00234d;
+    border: 1px solid #00234d;
     color: #00234d;
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 700;
+}
+.btn-shop:hover
+{
+    background: #00234d;
+        color: var(--btn-primary-color);
+    border: 1px solid var(--btn-primary-border-color);
 }
 
 .mt-30
@@ -4515,9 +4515,35 @@ margin-bottom: 30px;
         padding-left: 10px;
     
 }
-
+.slider-offers .slick-slide img
+{
+        margin-bottom: 40px
+}
 
 .slider-offers .slick-dots , .regular .slick-dots 
 {
     display: none !important;
+}
+
+/*
+.slick-next , .slick-prev {
+   
+    display: none !important;
+}*/
+
+@media (max-width: 768px)
+{
+   .slick-next , .slick-prev {
+   
+    display: none !important;
+} 
+    .slider-offers .slick-dots , .regular .slick-dots 
+{
+    display: block !important;
+}
+    .product-card-action-2
+    {
+            bottom: 125px;
+        right: 0;
+    }
 }

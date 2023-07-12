@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'GE SS Two Bold';
+    src: url('./fonts/GE_SS_Two_Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'GE SS Two Bold', sans-serif;
+  }
